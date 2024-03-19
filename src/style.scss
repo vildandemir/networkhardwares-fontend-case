@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(49, 59, 92) 95.2%
+  );
+  color: #ffffff;
+}
+
+.movie-app {
+  text-align: center;
+}
+
+.search-bar {
+  margin: 2% auto;
+  max-width: calc(1000px - 3.5%);
+}
+.movie-list {
+  //   margin: 2% auto;
+  max-width: 80%;
+
+  &__item {
+    display: inline-block;
+    margin: 20px;
+    max-width: 250px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 10px #111;
+    transition: background-color 0.25s linear;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      max-width: 180px;
+      padding: 20px;
+    }
+  }
+}
