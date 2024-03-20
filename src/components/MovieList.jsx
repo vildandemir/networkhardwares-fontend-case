@@ -11,6 +11,8 @@ const MovieList = (props) => {
     setSelectedMovie(null);
   };
 
+  console.log("Filmler:", props.movies);
+
   return (
     <div className="movie-list container-fluid">
       <div className="row justify-content-center">
@@ -22,22 +24,20 @@ const MovieList = (props) => {
           >
             <img src={movie.Poster} alt="movie"></img>
             <p>{movie.Title}</p>
-            <p>{movie.Year}</p>
           </div>
         ))}
       </div>
 
       {selectedMovie && (
-        <div className="modal-container">
+        <div className="modal-container d-flex justify-content-center align-items-center">
           <div
             className="modal"
             style={{ display: "block" }}
             onClick={handleCloseModal}
           >
-            <div className="modal-dialog">
+            <div className="modal-dialog modal-lg">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title">{selectedMovie.Title}</h5>
                   <button
                     type="button"
                     className="btn-close"
@@ -46,9 +46,18 @@ const MovieList = (props) => {
                   ></button>
                 </div>
                 <div className="modal-body">
-                  <img src={selectedMovie.Poster} alt="movie"></img>
-                  <p>{selectedMovie.Year}</p>
-                  <p>{selectedMovie.Plot}</p>
+                  <div className="modal-body__img">
+                    <img src={selectedMovie.Poster} alt="movie"></img>
+                  </div>
+                  <div className="modal-body__info">
+                    <h5>{selectedMovie.Title}</h5>
+                    <p>{selectedMovie.Year}</p>
+                    <p>{selectedMovie.Genre}</p>
+                    <p>{selectedMovie.Runtime}</p>
+                    <p>{selectedMovie.Plot}</p>
+                    <p>{selectedMovie.Director}</p>
+                    <p>{selectedMovie.Actors}</p>
+                  </div>
                 </div>
               </div>
             </div>
