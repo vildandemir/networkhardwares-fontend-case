@@ -17,3 +17,5 @@ Movie information is shown to the extent provided by the API.
    - npm install
 3. **Run the Project**:
    - npm run dev
+4. **Open browser**:
+   - http://localhost:5173/
