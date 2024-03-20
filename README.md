@@ -16,6 +16,7 @@ Starter Template: We have provided a minimal setup that gets you started with Re
     * The modal should also include a close button to return to the search results.
 ## Submission Guidelines
 * **Repository**: Fork this GitHub repository to your account and commit your project there. Make sure your repository is public.
+* **Deployment**: Deploy your project to a public host and add your project URL to the readme file.
 * **Readme File**: Include a README.md in your project root with:
     * An overview of the project.
     * Instructions on how to set up and run your project locally.
